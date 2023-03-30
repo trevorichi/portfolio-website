@@ -6,7 +6,7 @@ import Link from "next/link";
 import RotatingGlobe from "./components/RotatingGlobe";
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Home() {
+export default function Landing() {
   return (
     <>
       {/* <div className="hero min-h-screen bg-base-200">
@@ -31,7 +31,7 @@ export default function Home() {
               passionate about technology! Take a step into my world and learn
               more about me!
             </p>
-            <Link href="/components/Landing" className="btn btn-primary">
+            <Link href="/components/Home" className="btn btn-primary">
               Get Started
             </Link>
           </div>
