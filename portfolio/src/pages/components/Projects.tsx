@@ -3,7 +3,7 @@ export default function Projects() {
   return (
     <>
       <h1>
-        <Link href="/">take me home</Link>
+        <Link href="/components/Home">take me home</Link>
       </h1>
     </>
   );
