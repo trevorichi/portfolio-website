@@ -26,6 +26,39 @@ const RotatingGlobe = () => {
       1000
     );
 
+    let isDragging: boolean = false;
+    let rotationSpeedX: number = 0.01;
+    let rotationSpeedY: number = 0.01;
+    let lastMouseX: number = 0;
+    let lastMouseY: number = 0;
+
+    canvas.addEventListener("mousedown", onMouseDown);
+    canvas.addEventListener("mouseup", onMouseUp);
+    canvas.addEventListener("mousemove", onMouseMove);
+
+    function onMouseDown(event: MouseEvent) {
+      isDragging = true;
+    }
+
+    function onMouseUp(event: MouseEvent) {
+      isDragging = false;
+    }
+
+    function onMouseMove(event: MouseEvent) {
+      if (isDragging) {
+        const mouseX: number = event.clientX;
+        const mouseY: number = event.clientY;
+        const deltaY: number = mouseY - lastMouseY;
+        const deltaX: number = mouseX - lastMouseX;
+        lastMouseX = mouseX;
+        lastMouseY = mouseY;
+        rotationSpeedX += deltaY * 0.000001;
+        rotationSpeedX += deltaX * 0.000001;
+      }
+      globe.rotation.x += rotationSpeedX;
+      globe.rotation.y += rotationSpeedY;
+    }
+
     camera.position.z = 7;
 
     const scene = new THREE.Scene();
@@ -48,9 +81,9 @@ const RotatingGlobe = () => {
     function animate() {
       globe.rotation.y += 0.002;
 
-      renderer.render(scene, camera);
+      requestAnimationFrame(animate);
 
-      frameId = requestAnimationFrame(animate);
+      renderer.render(scene, camera);
     }
 
     return () => {
