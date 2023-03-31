@@ -1,13 +1,11 @@
-import Navbar from "./NavBar";
-import Footer from "./Footer";
-import RotatingGlobe from "./RotatingGlobe";
-import Link from "next/link";
+import Layout from "./Layout";
 
 export default function Home() {
   return (
     <>
-      <Navbar></Navbar>
-      <Footer></Footer>
+      <Layout>
+        <h1>Testing</h1>
+      </Layout>
     </>
   );
 }
