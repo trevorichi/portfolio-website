@@ -1,6 +1,8 @@
 import { GrLinkNext } from "react-icons/gr";
 import { GrLinkPrevious } from "react-icons/gr";
 import Layout from "./Layout";
+import { RxArrowLeft } from "react-icons/Rx";
+import { RxArrowRight } from "react-icons/Rx";
 
 export default function Projects() {
   return (
@@ -20,12 +22,12 @@ export default function Projects() {
               </div>
               <div className="col-start-6 col-end-7 row-start-5 row-end-7 flex justify-center items-center border-l">
                 <a href="#slide3" className="hover:scale-125">
-                  <GrLinkPrevious size={47} />
+                  <RxArrowLeft size={47} />
                 </a>
               </div>
               <div className="col-start-7 col-end-8 row-start-5 row-end-7 flex justify-center items-center ">
                 <a href="#slide2" className="hover:scale-125">
-                  <GrLinkNext size={47} />
+                  <RxArrowRight size={47} />
                 </a>
               </div>
             </div>
@@ -44,12 +46,12 @@ export default function Projects() {
               </div>
               <div className="col-start-6 col-end-7 row-start-5 row-end-7 flex justify-center items-center border-l">
                 <a href="#slide1" className="hover:scale-125">
-                  <GrLinkPrevious size={47} />
+                  <RxArrowLeft size={47} />
                 </a>
               </div>
               <div className="col-start-7 col-end-8 row-start-5 row-end-7 flex justify-center items-center">
                 <a href="#slide3" className="hover:scale-125">
-                  <GrLinkNext size={47} />
+                  <RxArrowRight size={47} />
                 </a>
               </div>
             </div>
@@ -68,12 +70,12 @@ export default function Projects() {
               </div>
               <div className="col-start-6 col-end-7 row-start-5 row-end-7 flex justify-center items-center border-l">
                 <a href="#slide2" className="hover:scale-125">
-                  <GrLinkPrevious size={47} />
+                  <RxArrowLeft size={47} />
                 </a>
               </div>
               <div className="col-start-7 col-end-8 row-start-5 row-end-7 flex justify-center items-center">
                 <a href="#slide1" className="hover:scale-125">
-                  <GrLinkNext size={47} />
+                  <RxArrowRight size={47} />
                 </a>
               </div>
             </div>
