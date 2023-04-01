@@ -19,12 +19,12 @@ export default function Projects() {
                 <h2 className="text-lg ">name of project 1</h2>
               </div>
               <div className="col-start-6 col-end-7 row-start-5 row-end-7 flex justify-center items-center border-l">
-                <a href="#slide3">
+                <a href="#slide3" className="hover:scale-125">
                   <GrLinkPrevious size={47} />
                 </a>
               </div>
               <div className="col-start-7 col-end-8 row-start-5 row-end-7 flex justify-center items-center ">
-                <a href="#slide2">
+                <a href="#slide2" className="hover:scale-125">
                   <GrLinkNext size={47} />
                 </a>
               </div>
@@ -43,12 +43,12 @@ export default function Projects() {
                 <h2 className="text-lg ">name of project 1</h2>
               </div>
               <div className="col-start-6 col-end-7 row-start-5 row-end-7 flex justify-center items-center border-l">
-                <a href="#slide1">
+                <a href="#slide1" className="hover:scale-125">
                   <GrLinkPrevious size={47} />
                 </a>
               </div>
               <div className="col-start-7 col-end-8 row-start-5 row-end-7 flex justify-center items-center">
-                <a href="#slide3">
+                <a href="#slide3" className="hover:scale-125">
                   <GrLinkNext size={47} />
                 </a>
               </div>
@@ -67,12 +67,12 @@ export default function Projects() {
                 <h2 className="text-lg ">name of project 1</h2>
               </div>
               <div className="col-start-6 col-end-7 row-start-5 row-end-7 flex justify-center items-center border-l">
-                <a href="#slide1">
+                <a href="#slide1" className="hover:scale-125">
                   <GrLinkPrevious size={47} />
                 </a>
               </div>
               <div className="col-start-7 col-end-8 row-start-5 row-end-7 flex justify-center items-center">
-                <a href="#slide1">
+                <a href="#slide1" className="hover:scale-125">
                   <GrLinkNext size={47} />
                 </a>
               </div>
