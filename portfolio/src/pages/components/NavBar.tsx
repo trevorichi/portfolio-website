@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import { RxGithubLogo } from "react-icons/rx";
 import { RxLinkedinLogo } from "react-icons/rx";
 import { RxCode } from "react-icons/rx";
