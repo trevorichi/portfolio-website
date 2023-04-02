@@ -1,8 +1,6 @@
-import { GrLinkNext } from "react-icons/gr";
-import { GrLinkPrevious } from "react-icons/gr";
 import Layout from "./Layout";
-import { RxArrowLeft } from "react-icons/Rx";
-import { RxArrowRight } from "react-icons/Rx";
+import { RxArrowLeft } from "react-icons/rx";
+import { RxArrowRight } from "react-icons/rx";
 
 export default function Projects() {
   return (

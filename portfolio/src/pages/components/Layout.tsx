@@ -1,6 +1,5 @@
 import { Inter } from "next/font/google";
 import Navbar from "./NavBar";
-import Footer from "./Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -11,7 +10,7 @@ type LayoutProps = {
 export default function Layout({ children }: LayoutProps) {
   return (
     <div>
-      <Navbar />
+      <Navbar></Navbar>
       {children}
     </div>
   );
