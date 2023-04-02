@@ -1,12 +1,19 @@
 import Layout from "./Layout";
 import { RxArrowLeft } from "react-icons/rx";
 import { RxArrowRight } from "react-icons/rx";
+import { useEffect } from "react";
 
 export default function Projects() {
+  useEffect(() => {
+    window.scrollTo({
+      top: (document.querySelector("#caro") as HTMLElement).offsetTop,
+      behavior: "smooth",
+    });
+  }, []);
   return (
     <>
       <Layout>
-        <div className="carousel" autoFocus>
+        <div id="caro" className="carousel" autoFocus>
           <div id="slide1" className="carousel-item w-full">
             <div className="grid grid-cols-7 grid-rows-6 gap-0 min-h-screen min-w-full">
               <div className="col-start-1 col-end-6 row-start-1 row-end-5 flex justify-center items-center border-b border-t">
