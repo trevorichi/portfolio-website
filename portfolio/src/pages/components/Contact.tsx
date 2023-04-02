@@ -14,7 +14,7 @@ export default function Contact() {
     message: "",
   });
 
-  const [showError, setShowError] = useState();
+  const [showError, setShowError] = useState("Waiting");
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -39,14 +39,17 @@ export default function Contact() {
     });
     console.log(res);
     if (!(res.status === 200)) {
-      setShowError(true);
+      setShowError("true");
+      let emailSent: boolean = true;
+    } else {
+      setShowError("false");
     }
   };
 
   return (
     <>
       <Layout>
-        {showError === true && (
+        {showError === "true" && (
           <div className="alert alert-error shadow-lg">
             <div>
               <svg
@@ -66,7 +69,7 @@ export default function Contact() {
             </div>
           </div>
         )}
-        {showError === false && (
+        {showError === "false" && (
           <div className="alert alert-success shadow-lg">
             <div>
               <svg
