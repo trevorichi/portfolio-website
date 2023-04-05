@@ -3,26 +3,61 @@ export default function Home() {
   return (
     <>
       <Layout>
-        <div class="max-w-2xl mx-auto">
+        <div className="max-w-2xl mx-auto">
           <ol className="relative border-l border-gray-200">
             <li className="mb-10 ml-4">
               <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white"></div>
-              <time className="mb-1 text-sm font-normal leading-none text-gray-400">
-                February 2022
+              <time className="mb-1 text-sm font-normal leading-none ">
+                June 2022 - Present
               </time>
               <h3 className="text-lg font-semibold">
-                Application UI code in Tailwind CSS
+                DevOps Engineer Consultant - Cardworks
               </h3>
-              <p className="mb-4 text-base font-normal text-gray-500">
-                Get access to over 20+ pages including a dashboard layout,
-                charts, kanban board, calendar, and pre-order E-commerce &
-                Marketing pages.
-              </p>
+              <ul className="list-disc px-4">
+                <li>
+                  Powershell scripting to provide automation for our teams
+                </li>
+                <li>Setting up CI/CD for our Development Teams applications</li>
+                <li>
+                  I rewrote and improved our daily HR file generation, I rewrote
+                  in Python/Powershell and the files went from being generated
+                  in 4 hours to 15 minutes.
+                </li>
+                <li className="mb-5">
+                  I am solely responsible for most of the internal tooling that
+                  the department required. Click to learn about what I have made
+                  so far.
+                </li>
+              </ul>
               <a
                 href="#"
-                className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700"
+                className="inline-flex items-center px-4 py-2 text-sm font-medium border border-gray-200 rounded-lg focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 "
               >
-                Learn more{" "}
+                <label htmlFor="my-modal-4">Learn More!</label>
+                <input
+                  type="checkbox"
+                  id="my-modal-4"
+                  className="modal-toggle"
+                />
+                <label htmlFor="my-modal-4" className="modal cursor-pointer">
+                  <label className="modal-box relative" htmlFor="">
+                    <h3 className="text-lg font-bold">Internal Tooling:</h3>
+                    <p className="py-4">
+                      I created a C# Web App using Razor pages for our End user
+                      Computing team to login in to and complete a survey
+                      regarding conference room readiness. The app was
+                      containarized and deployed on our companies internal
+                      network. I also configured CI/CD for the project, using
+                      Github Actions and Octopus Deploy
+                      <br></br>
+                      <br></br>I created a Python desktop application that is
+                      used by our sister Company Merrick Bank to complete
+                      testing of there Credit Card Application process. This was
+                      a critical project and is responsible for making our bank
+                      a significant amount of money.
+                    </p>
+                  </label>
+                </label>
                 <svg
                   className="w-3 h-3 ml-2"
                   fill="currentColor"
@@ -40,16 +75,18 @@ export default function Home() {
             <li className="mb-10 ml-4">
               <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white"></div>
               <time className="mb-1 text-sm font-normal leading-none text-gray-400">
-                March 2022
+                March 2022 - Present
               </time>
               <h3 className="text-xl font-semibold">
-                Marketing UI design in Figma
+                Software Developer and Consultant
               </h3>
-              <p className="text-base font-normal text-gray-500">
-                All of the pages and components are first designed in Figma and
-                we keep a parity between the two versions even as we update the
-                project.
-              </p>
+              <ul className="list-disc px-4">
+                <li>
+                  Chosen for a highly selective software developer training
+                  program - less than 5% of applicants are accepted
+                </li>
+                <li>Completed an intense 14 week training Program in:</li>
+              </ul>
             </li>
             <li className="ml-4">
               <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white"></div>
