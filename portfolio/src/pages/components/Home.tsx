@@ -7,8 +7,9 @@ export default function Home() {
           <ol className="relative border-l border-gray-200">
             <li className="mb-10 ml-4">
               <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white"></div>
-              <time className="mb-1 text-sm font-normal leading-none ">
-                June 2022 - Present
+              <time className="mb-1 text-sm font-normal leading-none">
+                <div className="inline-block pr-5">June 2022 - Present</div>
+                <div className="badge badge-primary inline-block">Current</div>
               </time>
               <h3 className="text-lg font-semibold">
                 DevOps Engineer Consultant - Cardworks
@@ -37,7 +38,7 @@ export default function Home() {
                 <input
                   type="checkbox"
                   id="my-modal-4"
-                  className="modal-toggle"
+                  className="modal-toggle hover:scale-110"
                 />
                 <label htmlFor="my-modal-4" className="modal cursor-pointer">
                   <label className="modal-box relative" htmlFor="">
@@ -78,7 +79,7 @@ export default function Home() {
                 March 2022 - Present
               </time>
               <h3 className="text-xl font-semibold">
-                Software Developer and Consultant
+                Software Developer and Consultant - Genesis10
               </h3>
               <ul className="list-disc px-4">
                 <li>
@@ -94,7 +95,22 @@ export default function Home() {
                 April 2022
               </time>
               <h3 className="text-xl font-semibold">
-                E-Commerce UI code in Tailwind CSS
+                This will be Tesla, working with customers, building teamwork
+                etc
+              </h3>
+              <p className="text-base font-normal text-gray-500">
+                Get started with dozens of web components and interactive
+                elements built on top of Tailwind CSS.
+              </p>
+            </li>
+            <li className="ml-4">
+              <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white"></div>
+              <time className="mb-1 text-sm font-normal leading-none text-gray-400">
+                April 2022
+              </time>
+              <h3 className="text-xl font-semibold">
+                This will be school with a learn more Model about my degree and
+                what i learned
               </h3>
               <p className="text-base font-normal text-gray-500">
                 Get started with dozens of web components and interactive
